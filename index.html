@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Calculator App</title>
+        <link rel="stylesheet" href="style.css"> <!-- Include your style sheet -->
+        <script src="script.js" defer></script> <!-- Include your script -->
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="verticalCenter">
+                <div class="calculatorBody" onclick="moveCursorToFarRight()">
+                    <div class="column">
+                        <div class="resultBox" id="resultBox" contenteditable="true"></div>
+                        <div class="row">
+                            <div><button class="button" onclick="appendCharToResult('(')">(</button></div>
+                            <div><button class="button" onclick="appendCharToResult(')')">)</button></div>
+                            <div><button class="button" onclick="appendCharToResult('π')">π</button></div>
+                            <div><button class="button" onclick="clearResult()">CLEAR</button></div>
+                        </div>
+                        <div class="row">
+                            <div><button class="button" onclick="appendCharToResult('1')">1</button></div>
+                            <div><button class="button" onclick="appendCharToResult('2')">2</button></div>
+                            <div><button class="button" onclick="appendCharToResult('3')">3</button></div>
+                            <div><button class="button" style="font-size: 30px;" onclick="appendCharToResult('/')">÷</button></div>
+                        </div>
+                        <div class="row">
+                            <div><button class="button" onclick="appendCharToResult('4')">4</button></div>
+                            <div><button class="button" onclick="appendCharToResult('5')">5</button></div>
+                            <div><button class="button" onclick="appendCharToResult('6')">6</button></div>
+                            <div><button class="button" style="font-size: 30px;" onclick="appendCharToResult('*')">x</button></div>
+                        </div>
+                        <div class="row">
+                            <div><button class="button" onclick="appendCharToResult('7')">7</button></div>
+                            <div><button class="button" onclick="appendCharToResult('8')">8</button></div>
+                            <div><button class="button" onclick="appendCharToResult('9')">9</button></div>
+                            <div><button class="button" style="font-size: 30px;" onclick="appendCharToResult('-')">-</button></div>
+                        </div>
+                        <div class="row">
+                            <div><button class="button" onclick="appendCharToResult(0)">0</button></div>
+                            <div><button class="button" style="font-size: 30px;" onclick="appendCharToResult('.')">.</button></div>
+                            <div><button class="button" style="font-size: 30px;" onclick="evaluateExpression()">=</button></div>
+                            <div><button class="button" style="font-size: 30px;" onclick="appendCharToResult('+')">+</button></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
